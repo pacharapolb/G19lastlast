@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfpg36gty5ovs"
+path="res://.godot/imported/Rain jume.mp3-6e756b115a3e39aad14654f779cac048.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sound/FX/Rain jume.mp3"
+dest_files=["res://.godot/imported/Rain jume.mp3-6e756b115a3e39aad14654f779cac048.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
