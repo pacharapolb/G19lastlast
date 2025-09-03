@@ -66,7 +66,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_rohwx")
 theme_override_font_sizes/font_size = 49
-text = "POINTS :"
+text = "YOUR POINTS :"
 horizontal_alignment = 1
 
 [node name="MainMenu" type="Button" parent="CanvasLayer"]
