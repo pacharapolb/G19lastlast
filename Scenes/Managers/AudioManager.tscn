@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bssjjygu83iwl"]
 
 [ext_resource type="Script" uid="uid://w5i2p0x14uwd" path="res://Scripts/AudioManager.gd" id="1_hp1cr"]
-[ext_resource type="AudioStream" uid="uid://dfpg36gty5ovs" path="res://Assets/Sound/FX/Rain jume.mp3" id="2_5h2c1"]
+[ext_resource type="AudioStream" uid="uid://d3ldv4818s140" path="res://Assets/Sound/FX/โดดสำรอง.wav" id="2_5h2c1"]
 [ext_resource type="AudioStream" uid="uid://60t6hiksr11q" path="res://Assets/Sound/FX/Spear.mp3" id="2_esrla"]
 [ext_resource type="AudioStream" uid="uid://8wcmxty12kw2" path="res://Assets/Sound/FX/Rain coin.mp3" id="3_5h2c1"]
 [ext_resource type="AudioStream" uid="uid://niu1of80kgp" path="res://Assets/Sound/FX/Death.mp3" id="4_5h2c1"]
@@ -14,7 +14,7 @@ script = ExtResource("1_hp1cr")
 
 [node name="JumpSfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_5h2c1")
-volume_db = -20.986
+volume_db = 0.614
 
 [node name="CoinPickup" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_5h2c1")

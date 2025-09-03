@@ -1372,7 +1372,7 @@ shape = SubResource("SegmentShape2D_ombkc")
 [node name="Player" parent="." instance=ExtResource("2_lpo2y")]
 z_index = 1
 position = Vector2(96, 688)
-gravity = 40.0
+gravity = 25.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 visible = false

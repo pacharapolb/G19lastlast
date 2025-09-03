@@ -49,7 +49,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_rohwx")
 theme_override_font_sizes/font_size = 58
-text = "TRY AGAIN"
 horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="CanvasLayer"]
@@ -83,6 +82,6 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("4_0qwdj")
 theme_override_font_sizes/font_size = 62
-text = "Main Menu"
+text = "TRY AGAIN"
 
 [connection signal="pressed" from="CanvasLayer/MainMenu" to="." method="_on_main_menu_pressed"]
