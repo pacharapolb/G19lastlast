@@ -12,3 +12,4 @@
 
 663380266-5 นายธนกฤต พูลทวี AI-2
 
+<img width="1281" height="723" alt="image" src="https://github.com/user-attachments/assets/7c65f61f-02f0-48a5-ba7c-260a9a295f45" />
