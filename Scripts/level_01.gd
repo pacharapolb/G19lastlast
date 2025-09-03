@@ -4,6 +4,7 @@ var die_count = 0
 func _ready() -> void:
 	GameManager.score = 0
 func _process(_delta: float) -> void:
+	$UserInterface/GameUI/ProgressBar.value = $Player.get_health()
 	if($Trap/Spear_Trap.status):
 		die_count += 1
 	if die_count >= 1:
