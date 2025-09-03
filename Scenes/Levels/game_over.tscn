@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://2boi4euwlbmc"]
+[gd_scene load_steps=5 format=3 uid="uid://2boi4euwlbmc"]
 
 [ext_resource type="Script" uid="uid://10cntux8ugq1" path="res://game_over.gd" id="1_ccer4"]
-[ext_resource type="Texture2D" uid="uid://dokhf230u45g4" path="res://d796087dcd044fdac305f9bfb657083d.jpg" id="2_8u835"]
-[ext_resource type="FontFile" uid="uid://fb50piql1c4w" path="res://Assets/Fonts/Minecraft.ttf" id="3_ftari"]
+[ext_resource type="Texture2D" uid="uid://df2ujwviji8n" path="res://Assets/assets/background/2/3.png" id="2_cfvhd"]
+[ext_resource type="FontFile" uid="uid://bijq12k4vaq3y" path="res://Super Kindly.ttf" id="3_rohwx"]
+[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="4_0qwdj"]
 
 [node name="Game_Over" type="Node2D"]
 modulate = Color(0.493545, 0.493546, 0.493546, 1)
@@ -11,12 +12,13 @@ script = ExtResource("1_ccer4")
 [node name="D796087Dcd044Fdac305f9Bfb657083d" type="Sprite2D" parent="."]
 position = Vector2(674, 392)
 scale = Vector2(2.39516, 2.52006)
-texture = ExtResource("2_8u835")
+texture = ExtResource("2_cfvhd")
 metadata/_edit_lock_ = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
+modulate = Color(0.951634, 0, 0.134234, 1)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -28,9 +30,9 @@ offset_right = 424.0
 offset_bottom = -139.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_fonts/font = ExtResource("3_rohwx")
 theme_override_font_sizes/font_size = 128
-text = "Game Over !!!"
+text = "YOU DIED"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
@@ -45,9 +47,10 @@ offset_right = 180.0
 offset_bottom = -68.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_fonts/font = ExtResource("3_rohwx")
 theme_override_font_sizes/font_size = 58
-text = "Haha easy :p"
+text = "TRY AGAIN"
+horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="CanvasLayer"]
 anchors_preset = 8
@@ -61,9 +64,9 @@ offset_right = 181.5
 offset_bottom = 35.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_fonts/font = ExtResource("3_rohwx")
 theme_override_font_sizes/font_size = 49
-text = "score :"
+text = "POINTS :"
 horizontal_alignment = 1
 
 [node name="MainMenu" type="Button" parent="CanvasLayer"]
@@ -78,7 +81,7 @@ offset_right = 187.5
 offset_bottom = -147.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_fonts/font = ExtResource("4_0qwdj")
 theme_override_font_sizes/font_size = 62
 text = "Main Menu"
 

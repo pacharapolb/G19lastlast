@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://btiha70hov0oo" path="res://Scripts/menu.gd" id="1_ju4x4"]
 [ext_resource type="FontFile" uid="uid://bijq12k4vaq3y" path="res://Super Kindly.ttf" id="1_mvsu8"]
-[ext_resource type="Texture2D" uid="uid://cfr1ehx0tgufp" path="res://2102.i518.009_sky_cloud_evening_illustration.jpg" id="2_7pnm7"]
+[ext_resource type="Texture2D" uid="uid://dnxmlrfaw35is" path="res://Assets/assets/background/4/7.png" id="2_7pnm7"]
 
 [node name="menu" type="Node2D"]
 script = ExtResource("1_ju4x4")
@@ -29,11 +29,11 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_mvsu8")
 theme_override_font_sizes/font_size = 166
-text = "Main Menu"
+text = "Ran raine"
 metadata/_edit_lock_ = true
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
-modulate = Color(1, 0.705882, 1, 1)
+modulate = Color(0.833955, 0.246722, 0, 1)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -47,7 +47,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_mvsu8")
 theme_override_font_sizes/font_size = 166
-text = "Main Menu"
+text = "Ran raine"
 
 [node name="Start" type="Button" parent="CanvasLayer"]
 modulate = Color(1, 1, 1, 0.670588)
