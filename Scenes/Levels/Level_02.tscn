@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://bjb3dx2x4bocm"]
+[gd_scene load_steps=33 format=4 uid="uid://bjb3dx2x4bocm"]
 
 [ext_resource type="Script" uid="uid://d0pmj7ebko6h8" path="res://Scripts/level_02.gd" id="1_jlrok"]
 [ext_resource type="PackedScene" uid="uid://w7m6tehvvy3g" path="res://Scenes/Prefabs/player.tscn" id="2_lpo2y"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://btq0cymy61xrc" path="res://Scenes/Prefabs/slime.tscn" id="13_72l3o"]
 [ext_resource type="PackedScene" uid="uid://cslayljhuko2b" path="res://Platform.tscn" id="14_lvv4x"]
 [ext_resource type="PackedScene" uid="uid://b8jpo6kvlewbk" path="res://back_g_2.tscn" id="17_2mo40"]
+[ext_resource type="Texture2D" uid="uid://36tlcteuyih0" path="res://Assets/assets/character/Countess_Vampire/Idle.png" id="18_6ihmv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6mkr2"]
 bg_color = Color(0.6, 0.6, 0.6, 0.419608)
@@ -1107,6 +1108,49 @@ sources/1 = SubResource("TileSetAtlasSource_6ihmv")
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_ombkc"]
 b = Vector2(5000, 0)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1l2o"]
+atlas = ExtResource("18_6ihmv")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xn1rf"]
+atlas = ExtResource("18_6ihmv")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8k45j"]
+atlas = ExtResource("18_6ihmv")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijm6r"]
+atlas = ExtResource("18_6ihmv")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1023"]
+atlas = ExtResource("18_6ihmv")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pqxa6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u1l2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xn1rf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8k45j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijm6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1023")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Level_02" type="Node2D"]
 script = ExtResource("1_jlrok")
 
@@ -1253,6 +1297,11 @@ position = Vector2(9541, -819)
 rotation = 3.14159
 scale = Vector2(5, 5)
 
+[node name="Spear_Trap18" parent="Trap" instance=ExtResource("5_ombkc")]
+position = Vector2(8501, -392)
+rotation = 6.2735
+scale = Vector2(5, 5)
+
 [node name="Coins" type="Node2D" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource("3_nht2m")]
@@ -1266,6 +1315,24 @@ position = Vector2(371, 680)
 
 [node name="Coin4" parent="Coins" instance=ExtResource("3_nht2m")]
 position = Vector2(4214, 610)
+
+[node name="Coin5" parent="Coins" instance=ExtResource("3_nht2m")]
+position = Vector2(371, 680)
+
+[node name="Coin6" parent="Coins" instance=ExtResource("3_nht2m")]
+position = Vector2(371, 680)
+
+[node name="Coin7" parent="Coins" instance=ExtResource("3_nht2m")]
+position = Vector2(371, 680)
+
+[node name="Coin8" parent="Coins" instance=ExtResource("3_nht2m")]
+position = Vector2(371, 680)
+
+[node name="Coin9" parent="Coins" instance=ExtResource("3_nht2m")]
+position = Vector2(371, 680)
+
+[node name="Coin10" parent="Coins" instance=ExtResource("3_nht2m")]
+position = Vector2(371, 680)
 
 [node name="GameManager" type="Node2D" parent="."]
 script = ExtResource("4_ndpt4")
@@ -1294,20 +1361,6 @@ theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("8_doswy")
 theme_override_font_sizes/font_size = 32
 text = "It will be easy HaHa !!"
-horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Credits2" type="Label" parent="TutorialText"]
-offset_left = 3956.0
-offset_top = 761.0
-offset_right = 4291.0
-offset_bottom = 1103.0
-theme_override_colors/font_color = Color(0.910156, 0.730469, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("8_doswy")
-theme_override_font_sizes/font_size = 256
-text = "⬇"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -1341,7 +1394,7 @@ drag_bottom_margin = 0.4
 editor_draw_limits = true
 
 [node name="Death_Zone" parent="." groups=["Death_Zone"] instance=ExtResource("9_es7ky")]
-position = Vector2(3704, 1284)
+position = Vector2(3566, 1235)
 scale = Vector2(3, 3)
 
 [node name="Monster" type="Node2D" parent="."]
@@ -1384,37 +1437,42 @@ position = Vector2(3995, 808)
 position = Vector2(4214, 693)
 
 [node name="Platform3" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(4487, 639)
+position = Vector2(4427, 570)
 
 [node name="Platform4" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(4909, 562)
+position = Vector2(4590, 432)
 
 [node name="Platform5" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(4595, 247)
+position = Vector2(4710, 243)
 
 [node name="Platform6" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(4146, 150)
+position = Vector2(4214, -40)
 
 [node name="Platform7" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(5223, 411)
-
-[node name="Platform8" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(3713, 71)
+position = Vector2(4501, 73)
 
 [node name="Platform9" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(3807, -312)
+position = Vector2(4077, -244)
 
 [node name="Platform10" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(4357, -326)
+position = Vector2(4403, -315)
 
 [node name="Platform11" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(3261, -117)
+position = Vector2(4674, -356)
 
 [node name="Platform12" parent="Platform" instance=ExtResource("14_lvv4x")]
 position = Vector2(4909, -372)
 
 [node name="LevelFinishDoor" parent="." instance=ExtResource("9_jlrok")]
-position = Vector2(9763, -438)
+position = Vector2(9764, -437)
 next_scene = ExtResource("10_6mkr2")
 
 [node name="BackG2" parent="." instance=ExtResource("17_2mo40")]
+
+[node name="princess" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="princess"]
+position = Vector2(9772, -478)
+scale = Vector2(-1.34402, 1.33594)
+sprite_frames = SubResource("SpriteFrames_pqxa6")
+autoplay = "default"
