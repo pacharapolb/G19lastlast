@@ -1,28 +1,52 @@
-# PLATFORMER 2D STARTER BY GAMES2PLAY STUDIOS
+****โครงงานเกม PLATFORMER 2D****
 
-This starter kit includes all the essential mechanics for your 2d platformer game. Using this kit,
-you will be able to make your own 2d platformer in no time.
+วิชา Computer Game Development ปี 2025
 
-**This Kit Includes:**
-- Juicy Platformer Controller
-- Animated Player
-- 2 Demo Levels
-- Level Management
-- Score System
-- Sound Effects
+สมาชิกในกลุ่ม
 
-The code is documented for better understanding and each script and function is documented with its purpose.
-The code is also beginner friendly, who wants to learn by diving directly into the coding game!
+663380283-5 นายพชรพล บัวจำรัส AI-2
 
-## Screenshots
-![2D Platformer Starter Kit Splash](https://github.com/AdilDevStuff/2D-Platformer-Starter-Kit/assets/94475453/0714f861-5db9-4c49-a5a7-c00708c0f9b5)
-![2D Starter Platformer SS 1](https://github.com/AdilDevStuff/2D-Platformer-Starter-Kit/assets/94475453/566dafe8-273d-4b60-97f6-4b29930c9eca)
-![2D Starter Platformer SS 2](https://github.com/AdilDevStuff/2D-Platformer-Starter-Kit/assets/94475453/aab09d8c-b7d7-459e-9313-9ec62bd585b8)
+663380259-2 นายชลกานต์ ศรีแก้ว AI-2
 
-## Credits
+663380519-2 นายชนาธิป บุตรโคตร AI-2
 
-**2D Assets**
-www.Kenney.nl
+663380266-5 นายธนกฤต พูลทวี AI-2
 
-**Sound Fx**
-Gdfxr (Sfxr plugin for godot)
+**RAN RAINE**
+
+**บ่าวเรนเบรกบ่อยู่**
+
+<img width="1281" height="723" alt="image" src="https://github.com/user-attachments/assets/7c65f61f-02f0-48a5-ba7c-260a9a295f45" />
+
+ธีมแนวเกม : วิ่ง วิ่ง วิ่ง
+
+****เนื้อเรื่องย่อ:****
+
+ในอาณาจักรที่เงียบสงบ มีเจ้าหญิงผู้เลอโฉมที่ทุกคนต่างชื่นชม แต่หัวใจของเธอยังว่างเปล่า จนกระทั่ง “เรน” ชายหนุ่มธรรมดาที่เต็มไปด้วยความกล้าหาญและความจริงใจ ตัดสินใจจะเอาชนะใจเจ้าหญิงด้วยของขวัญที่ไม่มีใครเหมือน ดอกไม้แห่งแสงสว่าง ที่ซ่อนอยู่ตามเส้นทางสุดอันตราย
+
+เรนต้องวิ่งฝ่าป่าอาถรรพ์ ข้ามหุบเหว หลบหลีกกับดักและเหล่าวายร้าย ดอกไม้แต่ละดอกที่เรนเก็บได้ จะเปล่งประกายเป็นสัญลักษณ์ของความรัก ความพยายาม และหัวใจที่ไม่ยอมแพ้
+
+เรนจะนำช่อดอกไม้แห่งแสงสว่างไปมอบให้เจ้าหญิง เพื่อขอแต่งงาน
+
+
+**ทดลองเล่น**
+<img width="1271" height="725" alt="image" src="https://github.com/user-attachments/assets/c2ffab8c-2167-4d33-b6f4-7705495897bf" />
+<img width="1279" height="720" alt="image" src="https://github.com/user-attachments/assets/4cab5c32-c7d3-45e1-a6c5-c009975eac16" />
+
+**Screenshots**
+
+
+**ตัวละคร**
+
+
+
+**Credits**
+
+2D Platformer Starter Kit https://github.com/AdilDevStuff/2D-Platformer-Starter-Kit/
+
+2D Assets https://craftpix.net/?srsltid=AfmBOor-hxs29878M_P_-BrroylMP3hFyl2qa3zXsv5Gzi2dzpokDR1j
+
+Music and Sound Fx : https://pixabay.com/th/sound-effects/search/2d%20game/?pagi=5
+
+
+
