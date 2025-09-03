@@ -1240,7 +1240,7 @@ tile_set = SubResource("TileSet_jlrok")
 [node name="Trap" type="Node2D" parent="."]
 
 [node name="Spear_Trap" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(3582, 732)
+position = Vector2(3582, 747)
 scale = Vector2(3, 3)
 
 [node name="Spear_Trap4" parent="Trap" instance=ExtResource("5_ombkc")]
@@ -1248,7 +1248,7 @@ position = Vector2(1088, 748)
 scale = Vector2(3, 3)
 
 [node name="Spear_Trap5" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(3047, 729)
+position = Vector2(3049, 748)
 scale = Vector2(3, 3)
 
 [node name="Spear_Trap6" parent="Trap" instance=ExtResource("5_ombkc")]
@@ -1256,35 +1256,35 @@ position = Vector2(495, 753)
 scale = Vector2(3, 3)
 
 [node name="Spear_Trap2" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(1955, 725)
+position = Vector2(1955, 749)
 scale = Vector2(3, 3)
 
 [node name="Spear_Trap8" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(8820, -418)
+position = Vector2(8822, -410)
 scale = Vector2(1.5, 1.5)
 
 [node name="Spear_Trap10" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(8206, -418)
+position = Vector2(8206, -410)
 scale = Vector2(1.5, 1.5)
 
 [node name="Spear_Trap13" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(7649, -421)
+position = Vector2(7651, -408)
 scale = Vector2(1.5, 1.5)
 
 [node name="Spear_Trap14" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(6701, -419)
+position = Vector2(6700, -409)
 scale = Vector2(1.5, 1.5)
 
 [node name="Spear_Trap15" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(5219, -414)
+position = Vector2(5218, -409)
 scale = Vector2(1.5, 1.5)
 
 [node name="Spear_Trap16" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(6526, -417)
+position = Vector2(6527, -412)
 scale = Vector2(1.5, 1.5)
 
 [node name="Spear_Trap17" parent="Trap" instance=ExtResource("5_ombkc")]
-position = Vector2(5700, -418)
+position = Vector2(5700, -410)
 scale = Vector2(1.5, 1.5)
 
 [node name="Spear_Trap11" parent="Trap" instance=ExtResource("5_ombkc")]
@@ -1375,12 +1375,9 @@ shape = SubResource("SegmentShape2D_ombkc")
 [node name="Player" parent="." instance=ExtResource("2_lpo2y")]
 z_index = 1
 position = Vector2(96, 688)
-move_speed = 350.0
-jump_force = 1000.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-3, 13)
-zoom = Vector2(1.5, 1.5)
 limit_left = 0
 limit_bottom = 1200
 limit_smoothed = true
@@ -1431,7 +1428,7 @@ position = Vector2(6163, -483)
 [node name="Platform" type="Node" parent="."]
 
 [node name="Platform" parent="Platform" instance=ExtResource("14_lvv4x")]
-position = Vector2(3995, 808)
+position = Vector2(4027, 807)
 
 [node name="Platform2" parent="Platform" instance=ExtResource("14_lvv4x")]
 position = Vector2(4214, 693)
@@ -1472,7 +1469,7 @@ next_scene = ExtResource("10_6mkr2")
 [node name="princess" type="Node2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="princess"]
-position = Vector2(9772, -478)
+position = Vector2(9772, -470)
 scale = Vector2(-1.34402, 1.33594)
 sprite_frames = SubResource("SpriteFrames_pqxa6")
 autoplay = "default"
