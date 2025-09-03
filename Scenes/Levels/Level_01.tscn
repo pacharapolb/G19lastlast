@@ -364,8 +364,7 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("8_gwcy2")
 theme_override_font_sizes/font_size = 32
-text = "Oh...
-I forget to tell you about the trap TwT"
+text = "Haha, it’s a trap lol!"
 horizontal_alignment = 1
 
 [node name="SetNextScene4" type="Label" parent="TutorialText"]
