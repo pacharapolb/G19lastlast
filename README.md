@@ -30,7 +30,7 @@
 
 
 **ทดลองเล่น**
-https://pacharapolb.github.io/G19lastlast/
+https://pacharapolb.github.io/Project-G19
 
 **Screenshots**
 <img width="1271" height="725" alt="image" src="https://github.com/user-attachments/assets/c2ffab8c-2167-4d33-b6f4-7705495897bf" />
