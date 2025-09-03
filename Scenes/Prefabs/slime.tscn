@@ -1,46 +1,31 @@
-[gd_scene load_steps=14 format=3 uid="uid://btq0cymy61xrc"]
+[gd_scene load_steps=11 format=3 uid="uid://btq0cymy61xrc"]
 
 [ext_resource type="Script" uid="uid://doqk62in62t8j" path="res://Scripts/slime.gd" id="1_bamxl"]
-[ext_resource type="Texture2D" uid="uid://baj47lyjmo8dy" path="res://Assets/Spritesheet/slime-Sheet.png" id="1_mkqvs"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bamxl"]
-atlas = ExtResource("1_mkqvs")
-region = Rect2(0, 0, 32, 25)
+[ext_resource type="Texture2D" uid="uid://cu123hdeaanh0" path="res://Assets/assets/character/Orc_Berserk/Run+Attack.png" id="2_bamxl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4dtpm"]
-atlas = ExtResource("1_mkqvs")
-region = Rect2(32, 0, 32, 25)
+atlas = ExtResource("2_bamxl")
+region = Rect2(0, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bn6gv"]
-atlas = ExtResource("1_mkqvs")
-region = Rect2(64, 0, 32, 25)
+atlas = ExtResource("2_bamxl")
+region = Rect2(96, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1x7pv"]
-atlas = ExtResource("1_mkqvs")
-region = Rect2(96, 0, 32, 25)
+atlas = ExtResource("2_bamxl")
+region = Rect2(192, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_go5qc"]
-atlas = ExtResource("1_mkqvs")
-region = Rect2(128, 0, 32, 25)
+atlas = ExtResource("2_bamxl")
+region = Rect2(288, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fna2u"]
-atlas = ExtResource("1_mkqvs")
-region = Rect2(160, 0, 32, 25)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lekas"]
-atlas = ExtResource("1_mkqvs")
-region = Rect2(192, 0, 32, 25)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3kv5f"]
-atlas = ExtResource("1_mkqvs")
-region = Rect2(224, 0, 32, 25)
+atlas = ExtResource("2_bamxl")
+region = Rect2(384, 0, 96, 96)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bd3x8"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bamxl")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_4dtpm")
 }, {
@@ -55,12 +40,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fna2u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lekas")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3kv5f")
 }],
 "loop": true,
 "name": &"walk",
@@ -68,22 +47,24 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gqbmj"]
-size = Vector2(18.6667, 10)
+size = Vector2(31.6667, 45.6667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4dtpm"]
-size = Vector2(13.3333, 4)
+size = Vector2(28.3333, 3)
 
 [node name="Slime" type="CharacterBody2D" groups=["Monster"]]
 scale = Vector2(3, 3)
 script = ExtResource("1_bamxl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["Monster"]]
+position = Vector2(-2, -2)
+scale = Vector2(0.743056, 0.743056)
 sprite_frames = SubResource("SpriteFrames_bd3x8")
 animation = &"walk"
 frame_progress = 0.173636
 
 [node name="body" type="CollisionShape2D" parent="." groups=["Monster"]]
-position = Vector2(1.33333, 5)
+position = Vector2(-7.16667, 10.8333)
 shape = SubResource("RectangleShape2D_gqbmj")
 
 [node name="Head" type="Area2D" parent="." groups=["Monster"]]
@@ -92,7 +73,7 @@ collision_layer = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Head" groups=["Monster"]]
 light_mask = 0
 visibility_layer = 2
-position = Vector2(0, -2.66667)
+position = Vector2(-7, -13.5)
 shape = SubResource("RectangleShape2D_4dtpm")
 
 [connection signal="body_entered" from="Head" to="." method="_on_area_2d_body_entered"]

@@ -74,22 +74,22 @@ func player_animations():
 		if abs(velocity.x) > 0:
 			particle_trails.emitting = true
 			player_sprite.play("Walk", 1.5)
-			$Character.walk()
+	
 		else:
 			player_sprite.play("Idle")
-			$Character.idle()
+		
 	else:
 		player_sprite.play("Jump")
-		$Character.jump()
+
 		
 # Flip player sprite based on X velocity
 func flip_player():
 	if velocity.x < 0: 
 		player_sprite.flip_h = true
-		$Character.direction(-0.15,0.15)
+		
 	elif velocity.x > 0:
 		player_sprite.flip_h = false
-		$Character.direction(0.15,0.15)
+	
 
 # Tween Animations
 func death_tween():
