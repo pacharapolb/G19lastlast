@@ -1,4 +1,4 @@
-****โครงงานเกม PLATFORMER 2D****
+***โครงงานเกม PLATFORMER 2D***
 
 วิชา Computer Game Development ปี 2025
 
@@ -30,15 +30,16 @@
 
 
 **ทดลองเล่น**
+
+
+**Screenshots**
 <img width="1271" height="725" alt="image" src="https://github.com/user-attachments/assets/c2ffab8c-2167-4d33-b6f4-7705495897bf" />
 <img width="1279" height="720" alt="image" src="https://github.com/user-attachments/assets/4cab5c32-c7d3-45e1-a6c5-c009975eac16" />
 
-**Screenshots**
-
-
 **ตัวละคร**
-
-
+<img width="480" height="96" alt="Run+Attack" src="https://github.com/user-attachments/assets/e70eb264-fcf2-48df-bc82-173aa5c6e2f5" />
+<img width="1024" height="128" alt="Run" src="https://github.com/user-attachments/assets/98c4def1-9ab6-4a0d-a253-661d168615e2" />
+<img width="640" height="128" alt="Idle" src="https://github.com/user-attachments/assets/a1369baf-f512-4b94-a0b9-9969a4618f85" />
 
 **Credits**
 
