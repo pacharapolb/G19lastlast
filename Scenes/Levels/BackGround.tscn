@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://cif52mocs1m5b"]
+
+[ext_resource type="Texture2D" uid="uid://dv77ptv6wskee" path="res://Back_Ground/far-clouds.png" id="1_cbdso"]
+[ext_resource type="Texture2D" uid="uid://q0bkvskjwyxl" path="res://Back_Ground/near-clouds.png" id="2_i30lg"]
+[ext_resource type="Texture2D" uid="uid://bkobidfd41sh5" path="res://Back_Ground/far-mountains.png" id="3_fucjb"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Back_Ground" type="ParallaxBackground" parent="."]
+scale = Vector2(0.5, 0.5)
+transform = Transform2D(0.5, 0, 0, 0.5, 0, 0)
+
+[node name="layer1" type="ParallaxLayer" parent="Back_Ground"]
+scale = Vector2(3, 3)
+motion_mirroring = Vector2(3550, 0)
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Back_Ground/layer1"]
+position = Vector2(184, 154)
+scale = Vector2(7, 7)
+texture = ExtResource("1_cbdso")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="Back_Ground/layer1"]
+position = Vector2(1064, 154)
+scale = Vector2(7, 7)
+texture = ExtResource("1_cbdso")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="Back_Ground/layer1"]
+position = Vector2(1952, 154)
+scale = Vector2(7, 7)
+texture = ExtResource("1_cbdso")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D4" type="Sprite2D" parent="Back_Ground/layer1"]
+position = Vector2(2840, 154)
+scale = Vector2(7, 7)
+texture = ExtResource("1_cbdso")
+metadata/_edit_lock_ = true
+
+[node name="layer3" type="ParallaxLayer" parent="Back_Ground"]
+scale = Vector2(3, 3)
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Back_Ground/layer3"]
+position = Vector2(96, 170)
+scale = Vector2(5, 5)
+texture = ExtResource("2_i30lg")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="Back_Ground/layer3"]
+position = Vector2(800, 170)
+scale = Vector2(5, 5)
+texture = ExtResource("2_i30lg")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="Back_Ground/layer3"]
+position = Vector2(1520, 170)
+scale = Vector2(5, 5)
+texture = ExtResource("2_i30lg")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D4" type="Sprite2D" parent="Back_Ground/layer3"]
+position = Vector2(2216, 170)
+scale = Vector2(5, 5)
+texture = ExtResource("2_i30lg")
+metadata/_edit_lock_ = true
+
+[node name="layer2" type="ParallaxLayer" parent="Back_Ground"]
+visible = false
+scale = Vector2(2, 2)
+motion_mirroring = Vector2(3350, 0)
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Back_Ground/layer2"]
+position = Vector2(432, 206)
+scale = Vector2(7, 7)
+texture = ExtResource("3_fucjb")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D4" type="Sprite2D" parent="Back_Ground/layer2"]
+position = Vector2(432, 206)
+scale = Vector2(7, 7)
+texture = ExtResource("3_fucjb")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="Back_Ground/layer2"]
+position = Vector2(1544, 206)
+scale = Vector2(7, 7)
+texture = ExtResource("3_fucjb")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="Back_Ground/layer2"]
+position = Vector2(2664, 206)
+scale = Vector2(7, 7)
+texture = ExtResource("3_fucjb")
+metadata/_edit_lock_ = true

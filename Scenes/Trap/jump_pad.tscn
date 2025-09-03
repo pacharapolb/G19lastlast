@@ -1,0 +1,79 @@
+[gd_scene load_steps=8 format=3 uid="uid://bet1d6oxf8d6o"]
+
+[ext_resource type="Script" uid="uid://3xhfg5bjp2rv" path="res://Scripts/jump_pad.gd" id="1_3dfkd"]
+[ext_resource type="Texture2D" uid="uid://ddeo01v0j7juf" path="res://Assets/Spritesheet/Trap/Jumper.png" id="2_ajehk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8gf00"]
+size = Vector2(20, 13)
+
+[sub_resource type="Animation" id="Animation_xal47"]
+resource_name = "Nothing"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_m5qm3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_sr2s0"]
+resource_name = "push"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mqu8j"]
+_data = {
+&"Nothing": SubResource("Animation_xal47"),
+&"RESET": SubResource("Animation_m5qm3"),
+&"push": SubResource("Animation_sr2s0")
+}
+
+[node name="Jump_pad" type="Area2D" groups=["Traps"]]
+script = ExtResource("1_3dfkd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_8gf00")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ajehk")
+hframes = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_mqu8j")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

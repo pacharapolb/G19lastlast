@@ -1,0 +1,47 @@
+[gd_scene load_steps=9 format=3 uid="uid://bssjjygu83iwl"]
+
+[ext_resource type="Script" uid="uid://w5i2p0x14uwd" path="res://Scripts/AudioManager.gd" id="1_hp1cr"]
+[ext_resource type="AudioStream" uid="uid://60t6hiksr11q" path="res://Assets/Sound/FX/Spear.mp3" id="2_esrla"]
+[ext_resource type="AudioStream" uid="uid://d3ldv4818s140" path="res://Assets/Sound/FX/30_Jump_03.wav" id="2_rhsx5"]
+[ext_resource type="AudioStream" uid="uid://c8rmpxte0m0k5" path="res://Assets/Sound/FX/retro-coin-4-236671.mp3" id="3_qy2l1"]
+[ext_resource type="AudioStream" uid="uid://k73hf8kg666r" path="res://Assets/Sound/FX/death2-340040.mp3" id="3_y7mjd"]
+[ext_resource type="AudioStream" uid="uid://bww8g3kviejbs" path="res://Assets/Sound/FX/classic_hurt.mp3" id="4_qes3j"]
+[ext_resource type="AudioStream" uid="uid://cp0ho2kmjsaga" path="res://Assets/Sound/FX/356-8-bit-chiptune-game-music-357518.mp3" id="6_qy2l1"]
+[ext_resource type="AudioStream" uid="uid://d3qm6ra4ugwep" path="res://Assets/Sound/FX/piglevelwin2mp3-14800.mp3" id="8_5h2c1"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_hp1cr")
+
+[node name="JumpSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_rhsx5")
+volume_db = 1.5
+
+[node name="CoinPickup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qy2l1")
+volume_db = -25.137
+
+[node name="DeathSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_y7mjd")
+volume_db = -3.322
+
+[node name="RespawnSfx" type="AudioStreamPlayer" parent="."]
+
+[node name="LevelCompleteSfx" type="AudioStreamPlayer" parent="."]
+volume_db = -2.0
+pitch_scale = 0.5
+
+[node name="SpearSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_esrla")
+volume_db = -25.924
+
+[node name="HurtSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_qes3j")
+volume_db = -18.365
+
+[node name="BGSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_qy2l1")
+volume_db = -29.26
+
+[node name="WinSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_5h2c1")
+volume_db = -32.232

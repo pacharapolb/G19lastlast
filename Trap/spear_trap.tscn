@@ -1,0 +1,101 @@
+[gd_scene load_steps=8 format=3 uid="uid://cf27ib42p12u"]
+
+[ext_resource type="Script" uid="uid://fshdx6w5pkmu" path="res://Scripts/spear_trap.gd" id="1_1pdh2"]
+[ext_resource type="Texture2D" uid="uid://c2d1yk4bdmqwf" path="res://Assets/Spritesheet/Trap/Spear.png" id="2_1pdh2"]
+
+[sub_resource type="Animation" id="Animation_1mj3x"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_5hig1"]
+resource_name = "spear_up"
+length = 0.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3, 0.333333, 0.366667, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0676098),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hdxx7"]
+_data = {
+&"RESET": SubResource("Animation_1mj3x"),
+&"spear_up": SubResource("Animation_5hig1")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pdh2"]
+size = Vector2(21, 38)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_01jow"]
+radius = 4.0
+height = 66.0
+
+[node name="Spear_Trap" type="StaticBody2D" groups=["Traps"]]
+script = ExtResource("1_1pdh2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_1pdh2")
+hframes = 12
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_hdxx7")
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, 15)
+shape = SubResource("RectangleShape2D_1pdh2")
+one_way_collision = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Traps"]]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_01jow")
+disabled = true
+one_way_collision = true
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

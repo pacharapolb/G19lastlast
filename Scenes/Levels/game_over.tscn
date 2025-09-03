@@ -1,0 +1,85 @@
+[gd_scene load_steps=4 format=3 uid="uid://2boi4euwlbmc"]
+
+[ext_resource type="Script" uid="uid://10cntux8ugq1" path="res://game_over.gd" id="1_ccer4"]
+[ext_resource type="Texture2D" uid="uid://dokhf230u45g4" path="res://d796087dcd044fdac305f9bfb657083d.jpg" id="2_8u835"]
+[ext_resource type="FontFile" uid="uid://fb50piql1c4w" path="res://Assets/Fonts/Minecraft.ttf" id="3_ftari"]
+
+[node name="Game_Over" type="Node2D"]
+modulate = Color(0.493545, 0.493546, 0.493546, 1)
+script = ExtResource("1_ccer4")
+
+[node name="D796087Dcd044Fdac305f9Bfb657083d" type="Sprite2D" parent="."]
+position = Vector2(674, 392)
+scale = Vector2(2.39516, 2.52006)
+texture = ExtResource("2_8u835")
+metadata/_edit_lock_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -424.0
+offset_top = -267.0
+offset_right = 424.0
+offset_bottom = -139.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_font_sizes/font_size = 128
+text = "Game Over !!!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -183.0
+offset_top = -127.0
+offset_right = 180.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_font_sizes/font_size = 58
+text = "Haha easy :p"
+
+[node name="Label3" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -181.5
+offset_top = -23.5
+offset_right = 181.5
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_font_sizes/font_size = 49
+text = "score :"
+horizontal_alignment = 1
+
+[node name="MainMenu" type="Button" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -187.5
+offset_top = -235.0
+offset_right = 187.5
+offset_bottom = -147.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_font_sizes/font_size = 62
+text = "Main Menu"
+
+[connection signal="pressed" from="CanvasLayer/MainMenu" to="." method="_on_main_menu_pressed"]
