@@ -1314,22 +1314,22 @@ position = Vector2(371, 680)
 position = Vector2(4214, 610)
 
 [node name="Coin5" parent="Coins" instance=ExtResource("3_nht2m")]
-position = Vector2(371, 680)
+position = Vector2(1967, 663)
 
 [node name="Coin6" parent="Coins" instance=ExtResource("3_nht2m")]
-position = Vector2(371, 680)
+position = Vector2(3052, 664)
 
 [node name="Coin7" parent="Coins" instance=ExtResource("3_nht2m")]
-position = Vector2(371, 680)
+position = Vector2(4592, 358)
 
 [node name="Coin8" parent="Coins" instance=ExtResource("3_nht2m")]
-position = Vector2(371, 680)
+position = Vector2(4411, -388)
 
 [node name="Coin9" parent="Coins" instance=ExtResource("3_nht2m")]
-position = Vector2(371, 680)
+position = Vector2(6633, -561)
 
 [node name="Coin10" parent="Coins" instance=ExtResource("3_nht2m")]
-position = Vector2(371, 680)
+position = Vector2(8504, -530)
 
 [node name="GameManager" type="Node2D" parent="."]
 script = ExtResource("4_ndpt4")
@@ -1374,6 +1374,7 @@ z_index = 1
 position = Vector2(96, 688)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+visible = false
 position = Vector2(-3, 13)
 limit_left = 0
 limit_bottom = 1200
@@ -1462,6 +1463,7 @@ position = Vector2(9764, -437)
 next_scene = ExtResource("10_6mkr2")
 
 [node name="BackG2" parent="." instance=ExtResource("17_2mo40")]
+visible = false
 
 [node name="princess" type="Node2D" parent="."]
 
@@ -1470,3 +1472,8 @@ position = Vector2(9772, -470)
 scale = Vector2(-1.34402, 1.33594)
 sprite_frames = SubResource("SpriteFrames_pqxa6")
 autoplay = "default"
+
+[node name="Death_Zone2" parent="." groups=["Death_Zone"] instance=ExtResource("9_es7ky")]
+position = Vector2(9954, 734)
+rotation = -1.57821
+scale = Vector2(3, 3)
