@@ -3,12 +3,12 @@
 [ext_resource type="Script" uid="uid://d0pmj7ebko6h8" path="res://Scripts/level_02.gd" id="1_jlrok"]
 [ext_resource type="PackedScene" uid="uid://w7m6tehvvy3g" path="res://Scenes/Prefabs/player.tscn" id="2_lpo2y"]
 [ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/Coin.tscn" id="3_nht2m"]
+[ext_resource type="Texture2D" uid="uid://bugu2bqcnoygs" path="res://Assets/flower1.png" id="4_6ihmv"]
 [ext_resource type="Texture2D" uid="uid://dokhf230u45g4" path="res://d796087dcd044fdac305f9bfb657083d.jpg" id="4_lvv4x"]
 [ext_resource type="Script" uid="uid://gb6x2ewg5bjj" path="res://Scripts/GameManager.gd" id="4_ndpt4"]
 [ext_resource type="Texture2D" uid="uid://bo5evle846661" path="res://Assets/Spritesheet/Final/Final/Tiles.png" id="4_ombkc"]
 [ext_resource type="PackedScene" uid="uid://cf27ib42p12u" path="res://Trap/spear_trap.tscn" id="5_ombkc"]
 [ext_resource type="Script" uid="uid://ysia4mm4m5ca" path="res://Scripts/GameUI.gd" id="6_um0jo"]
-[ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="7_ns8o6"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="8_doswy"]
 [ext_resource type="PackedScene" uid="uid://c3allvajuxkkt" path="res://Trap/death_zone.tscn" id="9_es7ky"]
 [ext_resource type="PackedScene" uid="uid://cyti38f0lagf2" path="res://Scenes/Prefabs/LevelFinishDoor.tscn" id="9_jlrok"]
@@ -1166,6 +1166,7 @@ grow_vertical = 2
 script = ExtResource("6_um0jo")
 
 [node name="TextureRect" type="TextureRect" parent="UserInterface/GameUI"]
+visible = false
 modulate = Color(1, 1, 1, 0.796078)
 layout_mode = 0
 offset_right = 331.0
@@ -1179,20 +1180,6 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-metadata/_edit_use_anchors_ = true
-
-[node name="ScoreTexture" type="TextureRect" parent="UserInterface/GameUI/Score"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.375
-anchor_right = -0.375
-offset_left = 16.0
-offset_top = 16.0
-offset_right = 116.0
-offset_bottom = 116.0
-texture = ExtResource("7_ns8o6")
-stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="ScoreLabel" type="Label" parent="UserInterface/GameUI/Score"]
@@ -1214,6 +1201,16 @@ theme_override_fonts/font = ExtResource("8_doswy")
 theme_override_font_sizes/font_size = 32
 text = "x 3"
 metadata/_edit_use_anchors_ = true
+
+[node name="ScoreTexture" type="TextureRect" parent="UserInterface/GameUI/Score"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 43.0
+offset_top = 40.0
+offset_right = 82.0
+offset_bottom = 100.0
+texture = ExtResource("4_6ihmv")
+expand_mode = 1
 
 [node name="ProgressBar" type="ProgressBar" parent="UserInterface/GameUI"]
 modulate = Color(1, 0, 0, 1)

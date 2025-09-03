@@ -8,10 +8,10 @@
 [ext_resource type="Script" uid="uid://gb6x2ewg5bjj" path="res://Scripts/GameManager.gd" id="4_vgfkr"]
 [ext_resource type="Texture2D" uid="uid://jaegp53ccc7w" path="res://Assets/Spritesheet/platformPack_tilesheet.png" id="5_wqbaa"]
 [ext_resource type="Script" uid="uid://ysia4mm4m5ca" path="res://Scripts/GameUI.gd" id="6_66mfc"]
-[ext_resource type="Texture2D" uid="uid://clreg520jah1j" path="res://Assets/platformPack_item008.png" id="7_j7jun"]
 [ext_resource type="Texture2D" uid="uid://ce456fvbfwu8r" path="res://Assets/Tileset.png" id="8_5pmb1"]
 [ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="8_gwcy2"]
 [ext_resource type="PackedScene" uid="uid://btq0cymy61xrc" path="res://Scenes/Prefabs/slime.tscn" id="11_5pmb1"]
+[ext_resource type="Texture2D" uid="uid://bugu2bqcnoygs" path="res://Assets/flower1.png" id="12_i7ntp"]
 [ext_resource type="PackedScene" uid="uid://cf27ib42p12u" path="res://Trap/spear_trap.tscn" id="12_xpj05"]
 [ext_resource type="PackedScene" uid="uid://c3allvajuxkkt" path="res://Trap/death_zone.tscn" id="14_xpj05"]
 [ext_resource type="PackedScene" uid="uid://cqir4yjghmvgh" path="res://Backg1.tscn" id="15_i7ntp"]
@@ -417,12 +417,12 @@ offset_bottom = 40.0
 [node name="ScoreTexture" type="TextureRect" parent="UserInterface/GameUI/Score"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 16.0
-offset_top = 16.0
-offset_right = 116.0
-offset_bottom = 116.0
-texture = ExtResource("7_j7jun")
-stretch_mode = 4
+offset_left = 43.0
+offset_top = 40.0
+offset_right = 82.0
+offset_bottom = 100.0
+texture = ExtResource("12_i7ntp")
+expand_mode = 1
 
 [node name="ScoreLabel" type="Label" parent="UserInterface/GameUI/Score"]
 unique_name_in_owner = true
