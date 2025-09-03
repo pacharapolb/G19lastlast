@@ -496,3 +496,6 @@ position = Vector2(1060, 347)
 scale = Vector2(-3, 3)
 
 [node name="backg1" parent="." instance=ExtResource("15_i7ntp")]
+
+[node name="Coin9" parent="." instance=ExtResource("3_rrh80")]
+position = Vector2(3742, 421)
